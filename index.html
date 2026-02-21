@@ -108,6 +108,21 @@
             box-shadow: 0 0 12px rgba(0, 217, 255, 0.4);
         }
 
+        .credit-banner-second {
+            top: 56px;
+            background: linear-gradient(90deg, rgba(0, 255, 65, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
+            border-bottom: 1px solid rgba(0, 255, 65, 0.3);
+        }
+
+        .credit-banner-second img {
+            border-color: var(--green);
+            box-shadow: 0 0 12px rgba(0, 255, 65, 0.4);
+        }
+
+        .credit-banner-second a {
+            color: var(--green);
+        }
+
         .credit-banner a {
             color: var(--cyan);
             text-decoration: none;
@@ -125,7 +140,7 @@
         /* Navigation */
         nav {
             position: fixed;
-            top: 56px;
+            top: 112px;
             left: 0;
             right: 0;
             z-index: 100;
@@ -179,7 +194,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 160px 20px 60px;
+            padding: 220px 20px 60px;
             position: relative;
         }
 
@@ -721,8 +736,13 @@
 <body>
     <div class="credit-banner">
         <img src="https://avatars.githubusercontent.com/u/183274170?v=4" alt="Kobi Amsellem">
-        <span>Originally created by</span>
+        <span>Originally created by the genius</span>
         <a href="https://github.com/KobiAms-Wix" target="_blank">Kobi Amsellem</a>
+    </div>
+    <div class="credit-banner credit-banner-second">
+        <img src="https://avatars.githubusercontent.com/u/5469589?v=4" alt="Itay Shmool">
+        <span>Forked by</span>
+        <a href="https://github.com/itayshmool" target="_blank">Itay Shmool</a>
     </div>
 
     <nav>
