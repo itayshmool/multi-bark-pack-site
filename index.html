@@ -83,10 +83,49 @@
             padding: 0 20px;
         }
 
+        /* Credit banner */
+        .credit-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 101;
+            background: linear-gradient(90deg, rgba(0, 217, 255, 0.1) 0%, rgba(0, 255, 65, 0.1) 100%);
+            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
+            padding: 8px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 12px;
+        }
+
+        .credit-banner img {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 1px solid var(--cyan);
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
+        }
+
+        .credit-banner a {
+            color: var(--cyan);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .credit-banner a:hover {
+            text-decoration: underline;
+        }
+
+        .credit-banner span {
+            color: var(--text-dim);
+        }
+
         /* Navigation */
         nav {
             position: fixed;
-            top: 0;
+            top: 40px;
             left: 0;
             right: 0;
             z-index: 100;
@@ -140,7 +179,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 100px 20px 60px;
+            padding: 140px 20px 60px;
             position: relative;
         }
 
@@ -680,6 +719,12 @@
     </style>
 </head>
 <body>
+    <div class="credit-banner">
+        <img src="https://avatars.githubusercontent.com/u/183274170?v=4" alt="Kobi Amsellem">
+        <span>Originally created by</span>
+        <a href="https://github.com/KobiAms-Wix" target="_blank">Kobi Amsellem</a>
+    </div>
+
     <nav>
         <div class="container">
             <a href="#" class="nav-logo">
