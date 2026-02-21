@@ -90,57 +90,60 @@
             left: 0;
             right: 0;
             z-index: 101;
-            background: linear-gradient(90deg, rgba(0, 217, 255, 0.1) 0%, rgba(0, 255, 65, 0.1) 100%);
-            border-bottom: 1px solid rgba(0, 217, 255, 0.3);
-            padding: 12px 20px;
+            background: linear-gradient(90deg, rgba(0, 217, 255, 0.08) 0%, rgba(0, 255, 65, 0.08) 100%);
+            border-bottom: 1px solid rgba(0, 217, 255, 0.2);
+            padding: 10px 20px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            gap: 12px;
-            font-size: 14px;
+            gap: 6px;
+            font-size: 13px;
         }
 
-        .credit-banner img {
-            width: 32px;
-            height: 32px;
+        .credit-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .credit-row img {
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             border: 2px solid var(--cyan);
-            box-shadow: 0 0 12px rgba(0, 217, 255, 0.4);
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
         }
 
-        .credit-banner-second {
-            top: 56px;
-            background: linear-gradient(90deg, rgba(0, 255, 65, 0.1) 0%, rgba(0, 217, 255, 0.1) 100%);
-            border-bottom: 1px solid rgba(0, 255, 65, 0.3);
-        }
-
-        .credit-banner-second img {
+        .credit-row:last-child img {
             border-color: var(--green);
-            box-shadow: 0 0 12px rgba(0, 255, 65, 0.4);
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
         }
 
-        .credit-banner-second a {
-            color: var(--green);
+        .credit-row span {
+            color: var(--text-dim);
+            width: 200px;
+            text-align: right;
         }
 
-        .credit-banner a {
+        .credit-row a {
             color: var(--cyan);
             text-decoration: none;
             font-weight: 500;
+            width: 120px;
         }
 
-        .credit-banner a:hover {
+        .credit-row:last-child a {
+            color: var(--green);
+        }
+
+        .credit-row a:hover {
             text-decoration: underline;
-        }
-
-        .credit-banner span {
-            color: var(--text-dim);
         }
 
         /* Navigation */
         nav {
             position: fixed;
-            top: 112px;
+            top: 88px;
             left: 0;
             right: 0;
             z-index: 100;
@@ -194,7 +197,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 220px 20px 60px;
+            padding: 180px 20px 60px;
             position: relative;
         }
 
@@ -735,14 +738,16 @@
 </head>
 <body>
     <div class="credit-banner">
-        <img src="https://avatars.githubusercontent.com/u/183274170?v=4" alt="Kobi Amsellem">
-        <span>Originally created by the genius</span>
-        <a href="https://github.com/KobiAms-Wix" target="_blank">Kobi Amsellem</a>
-    </div>
-    <div class="credit-banner credit-banner-second">
-        <img src="https://avatars.githubusercontent.com/u/5469589?v=4" alt="Itay Shmool">
-        <span>Forked by</span>
-        <a href="https://github.com/itayshmool" target="_blank">Itay Shmool</a>
+        <div class="credit-row">
+            <span>Originally created by the genius</span>
+            <img src="https://avatars.githubusercontent.com/u/183274170?v=4" alt="Kobi Amsellem">
+            <a href="https://github.com/KobiAms-Wix" target="_blank">Kobi Amsellem</a>
+        </div>
+        <div class="credit-row">
+            <span>Forked by</span>
+            <img src="https://avatars.githubusercontent.com/u/5469589?v=4" alt="Itay Shmool">
+            <a href="https://github.com/itayshmool" target="_blank">Itay Shmool</a>
+        </div>
     </div>
 
     <nav>
